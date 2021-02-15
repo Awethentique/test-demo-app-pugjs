@@ -1,0 +1,41 @@
+mixin memberPlan(DATA)
+  .content-block.member-plan
+    .block.plan
+        h1="Plan Type"
+        .block-inner
+          +formInputWithLabel("Plan Name", "plan-name", "Add a name to your plan")
+          p.form-input
+            label="Select type"
+          .plan-types
+            input(type='radio', name='rplan-type', class='plan-type-radio', id='membership', value='membership')
+            label(for='membership' class='plan-type-selection membership')
+              // img(src=DATA.planType.membership.image)
+              h3=DATA.planType.membership.title
+              p=DATA.planType.membership.text
+
+            input(type='radio', name='rplan-type', class='plan-type-radio', id='credit-pack', value='credit-pack')
+            label(for='credit-pack' class='plan-type-selection credit-pack')
+              // img(src=DATA.planType.credit.image)
+              h3=DATA.planType.credit.title
+              p=DATA.planType.credit.text
+
+    .block.no-background.action-controls.last
+      a(class='button', href='#share') 
+        i.fa.fa-share-alt(aria-hidden='true')
+        |  Share
+      a(class='button last', href='#duplicate') 
+        i.fa.fa-copy(aria-hidden='true')
+        |  Duplicate
+      .summary
+        h1=DATA.planType.summary.title
+        p=DATA.planType.summary.text
+        .loader
+        .loader.short
+        .loader
+        .loader.short
+      a(class='button negative', href='#delete')  
+        i.fa.fa-trash-alt(aria-hidden='true')
+        |  Delete
+      a(class='button positive last', href='#save')  
+        i.fa.fa-save(aria-hidden='true')
+        |  Save

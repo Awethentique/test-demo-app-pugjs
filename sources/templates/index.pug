@@ -5,8 +5,27 @@ doctype html
 html(lang="en" dir="ltr" class="index")
     
     include ./includes/head.pug
+    include ./components/leftBar.pug
+    include ./components/topBar.pug
+    include ./components/settings.pug
+    include ./components/formInputWithLabel.pug
+    include ./components/memberProfile.pug
+    include ./components/memberPlan.pug
+
     head
         +head(DATA)
 
     body
-        p="Check app is loading ok"
+        .view-controls
+          a(class='button close', id="close-button" href='#close') 
+            i.fas.fa-times
+        +leftBar(DATA)
+        .content-area
+          +topBar(DATA)
+
+          form(method="post", action="/")
+            +memberProfile(DATA)
+            +memberPlan(DATA)
+
+          .center.add-plan
+            a(class='button', id="add-another-plan" href='#add-another-plan') Add another plan

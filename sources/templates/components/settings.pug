@@ -1,0 +1,16 @@
+
+mixin settings(labelText, id, status)
+  p.checklist
+    label(for=id class="switch")
+      input(
+        type='checkbox'
+        name=id
+        id=id
+        class='checkbox-item'
+        checked=status
+      )
+      span.slider
+    if status
+      label(for=id class="checkbox-label bold")=labelText
+    else
+      label(for=id class="checkbox-label")=labelText

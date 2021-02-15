@@ -1,0 +1,24 @@
+mixin memberProfile(DATA)
+  .content-block.member-profile
+    .block.details
+      h1="Details"
+      .block-inner
+        +formInputWithLabel("Membership Name", "member-name", "Probably the best membership name in the world ever")
+
+        p.form-input
+          label(for="member-desciption") Membership Description
+          textarea(
+            name="member-desciption", 
+            id="member-desciption" 
+            placeholder="Probably the best membership description ever"
+            rows="4"
+          )
+    .block.settings.last
+      h1="Settings"
+      .block-inner
+        +settings('Restrict to one purchase per client', 'one-per-client', true)
+        +settings('Make private (will not be shown in app or online)', 'make-private', false)
+        +settings('This is a trial membership', 'trial-membership', false)
+        +settings('Allow this membership to roam to linked locations', 'allow-roaming', true)
+  // script.
+    

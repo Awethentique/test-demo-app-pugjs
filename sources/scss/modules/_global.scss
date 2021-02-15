@@ -1,0 +1,41 @@
+@import './typography';
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: center;
+  flex-direction: row;
+  // min-height: 100vh;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+  color: $accent-color-c;
+  background-color: $cape-background;
+}
+
+.content-area{
+  align-self: flex-start;
+  flex: 1;
+}
+
+.center {
+    text-align: center;
+}
+
+@media only screen 
+  and (orientation: portrait) { 
+  body {
+    flex-direction: column;
+  }
+}
