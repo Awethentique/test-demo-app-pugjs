@@ -78,5 +78,8 @@ a{
           font-size: 20px;
         }
       }
+      .add-plan & {
+        width: calc(100% -24px);
+      }
     }
 }

@@ -168,8 +168,24 @@
           }
         }
       }
+      .action-controls{
+        .summary{
+          margin-top: 16px;
+        }
+        .form-actions{
+          display: block;
+          .button {
+            width: 100%;
+            min-width: initial;
+            &:not(.last){
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
     }
 }
+
 @media only screen 
   and (min-width: 768px)
   and (max-width: 1213px) { 
@@ -198,10 +214,13 @@
       .action-controls{
         .form-actions{
           display: block;
-        }
-        .button {
-          width: 100%;
-          min-width: initial;
+          .button {
+            width: 100%;
+            min-width: initial;
+            &:not(.last){
+              margin-bottom: 8px;
+            }
+          }
         }
       }
     }

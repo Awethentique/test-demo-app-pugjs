@@ -14,3 +14,10 @@
     }
   }
 }
+
+@media only screen
+  and (max-width: 768px){
+  .settings{
+    margin-top: 16px;
+  }
+}
