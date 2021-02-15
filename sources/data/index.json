@@ -1,0 +1,33 @@
+{
+  "head": {
+    "title": "title - index",
+    "description": "description - index"
+  },
+  "leftbar": {
+    "image": "images/glofox-logo-icon.svg"
+  },
+  "topBar": {
+    "memberTitle": "Membership Title",
+    "memberTitleCopy": "Probably the best membership name in the world ever.",
+    "MemberDescription": "Membership Description",
+    "MemberDescriptionCopy": "Probably the best membership description ever.",
+    "MemberPlans": "Membership Plan(s)",
+    "MemberPlansCount": "0"
+  },
+  "planType": {
+    "membership":{
+      "image": "images/circle.svg",
+      "title": "Membership",
+      "text": "Allows the client to come to the studio as much as they want within a time frame"
+    },
+    "credit":{
+      "image": "images/triangle.svg",
+      "title": "Credit pack",
+      "text": "The client gets a certain number of visits in the pack"
+    },
+    "summary": {
+      "title": "Summary",
+      "text": "Review how a client will see the membership plan offering"
+    } 
+  }
+}
