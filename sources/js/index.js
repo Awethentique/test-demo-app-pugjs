@@ -25,15 +25,18 @@ $(document).ready(function () {
     const ripple = button.hasChildNodes('.ripple');
 
     circle.style.width = circle.style.height = `${diameter}px`;
-    // circle.style.left = `${e.clientX - button.offsetLeft - radius}px`;
-    // circle.style.top = `${e.clientY - button.offsetTop - radius}px`;
+      circle.style.left = `${e.clientX - button.offsetLeft - radius}px`;
+      circle.style.top = `${e.clientY - button.offsetTop - radius}px`;
 
-    // circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
-    // circle.style.top = `${event.clientY - (button.offsetTop + radius)}px`;
+     // circle.style.left = `${event.clientX - (button.offsetLeft + radius)}px`;
+     // circle.style.top = `${event.clientY - (button.offsetTop + radius)}px`;
 
+     // circle.style.left = `${event.clientX - (button.offsetLeft - diameter)}px`;
+     // circle.style.top = `${event.clientY - (button.offsetTop - diameter)}px`;
 
-    circle.style.left = `${event.clientX - (button.offsetLeft + (radius))}px`;
-    circle.style.top = `${event.clientY - (button.offsetTop + (radius/2))}px`;
+    // circle.style.left = `${event.clientX - (button.offsetLeft + (radius/2))}px`;
+    // circle.style.top = `${event.clientY - (button.offsetTop + (radius/2))}px`;
+console.log('circle.style.top', circle.style.top);
 
     circle.classList.add("ripple");
 

@@ -68,7 +68,7 @@ a{
 }
 
 @media only screen 
-  and (orientation: portrait) { 
+  and (max-width: 768px) { 
     a{
       &.button { 
         &.close{
@@ -77,9 +77,6 @@ a{
           padding: 10px;
           font-size: 20px;
         }
-      }
-      .add-plan &{
-        width: 100%;
       }
     }
 }

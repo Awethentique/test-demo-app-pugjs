@@ -21,7 +21,7 @@
 }
 
 @media only screen 
-  and (orientation: portrait) { 
+  and (max-width: 768px) { 
   .top-bar {
     flex-direction: column;  
     width: 100vw; 

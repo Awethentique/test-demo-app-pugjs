@@ -20,12 +20,14 @@ mixin memberPlan(DATA)
               p=DATA.planType.credit.text
 
     .block.no-background.action-controls.last
-      a(class='button', href='#share') 
-        i.fa.fa-share-alt(aria-hidden='true')
-        |  Share
-      a(class='button last', href='#duplicate') 
-        i.fa.fa-copy(aria-hidden='true')
-        |  Duplicate
+      .form-actions.secondary
+        a(class='button', href='#share') 
+          i.fa.fa-share-alt(aria-hidden='true')
+          |  Share
+        a(class='button last', href='#duplicate') 
+          i.fa.fa-copy(aria-hidden='true')
+          |  Duplicate
+
       .summary
         h1=DATA.planType.summary.title
         p=DATA.planType.summary.text
@@ -33,9 +35,10 @@ mixin memberPlan(DATA)
         .loader.short
         .loader
         .loader.short
-      a(class='button negative', href='#delete')  
-        i.fa.fa-trash-alt(aria-hidden='true')
-        |  Delete
-      a(class='button positive last', href='#save')  
-        i.fa.fa-save(aria-hidden='true')
-        |  Save
+      .form-actions.primary
+        a(class='button negative', href='#delete')  
+          i.fa.fa-trash-alt(aria-hidden='true')
+          |  Delete
+        a(class='button positive last', href='#save')  
+          i.fa.fa-save(aria-hidden='true')
+          |  Save

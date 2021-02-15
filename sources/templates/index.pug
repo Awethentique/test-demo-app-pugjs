@@ -13,19 +13,20 @@ html(lang="en" dir="ltr" class="index")
     include ./components/memberPlan.pug
 
     head
-        +head(DATA)
+      +head(DATA)
 
     body
-        .view-controls
-          a(class='button close', id="close-button" href='#close') 
-            i.fas.fa-times
-        +leftBar(DATA)
-        .content-area
-          +topBar(DATA)
+      .view-controls
+        a(class='button close', id="close-button" href='#close' alt='close' ) 
+          i.fas.fa-times
+      +leftBar(DATA)
+      
+      .content-area
+        +topBar(DATA)
 
-          form(method="post", action="/")
-            +memberProfile(DATA)
-            +memberPlan(DATA)
+        form(method="post", action="/")
+          +memberProfile(DATA)
+          +memberPlan(DATA)
 
-          .center.add-plan
-            a(class='button', id="add-another-plan" href='#add-another-plan') Add another plan
+        .center.add-plan
+          a(class='button', id="add-another-plan" href='#add-another-plan') Add another plan

@@ -1,8 +1,9 @@
 @import './modules/keyframes';
-@import './modules/buttons';
 @import './modules/typography';
 @import './modules/layout.scss';
+@import './components/buttons';
 @import './components/leftbar';
 @import './components/topbar';
 @import './components/formcontrols';
-
+@import './components/memberProfile';
+@import './components/memberPlan';

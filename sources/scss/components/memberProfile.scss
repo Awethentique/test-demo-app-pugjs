@@ -1,0 +1,16 @@
+.member-profile{
+  .details, 
+  .settings {
+    width: 50%;
+    .block-inner {
+      height: 27vh;
+      min-height: 210px;
+    }
+  }
+  .settings{
+    .block-inner{
+      justify-content: space-between;
+      padding-bottom: 16px;
+    }
+  }
+}
