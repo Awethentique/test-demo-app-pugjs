@@ -24,21 +24,20 @@ body {
   background-color: $cape-background;
 }
 
-.content-area{
+.content-area {
   align-self: flex-start;
   flex: 1;
   width: calc(100% - 140px);
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 // Cater for mobile devices below 768px
-@media only screen 
-  and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
   body {
     flex-direction: column;
-    .content-area{
+    .content-area {
       align-self: flex-start;
       flex: 1;
       width: 100%;

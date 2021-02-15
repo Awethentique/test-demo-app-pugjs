@@ -1,4 +1,4 @@
-.view-controls{
+.view-controls {
   width: auto;
   padding: 36px 0px;
   position: absolute;
@@ -6,23 +6,23 @@
   top: 0;
 }
 
-.content-block{
+.content-block {
   display: flex;
   margin: 20px 30px;
   padding: 20px 20px 24px 20px;
   background: $most-light;
   box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.08);
   border-radius: 12px;
-  .block{
+  .block {
     &:not(.last) {
       margin-right: 20px;
     }
-    h1{
-       @include app-font(BoldFont, 18px, 700);
-       color: $most-dark;
-       margin-block-start: 0px;
+    h1 {
+      @include app-font(BoldFont, 18px, 700);
+      color: $most-dark;
+      margin-block-start: 0px;
     }
-    .block-inner{
+    .block-inner {
       background-color: $cape-background;
       border-radius: 12px;
       padding: 2px 12px;
@@ -30,23 +30,21 @@
       height: auto;
       display: flex;
       flex-direction: column;
-      
     }
-    &:not(.no-background){
-      h1{
+    &:not(.no-background) {
+      h1 {
         margin-left: 12px;
       }
     }
   }
 }
 
-.add-plan{
+.add-plan {
   margin: 20px auto 16px auto;
 }
 
-@media only screen 
-  and (max-width: 768px)  { 
-  .view-controls{
+@media only screen and (max-width: 768px) {
+  .view-controls {
     width: auto;
     padding: 12px;
     right: 0;
@@ -57,8 +55,8 @@
     margin: 8px;
     width: calc(100vw - 16px);
     padding: 10px 10px 12px;
-    .block{
-      &.details, 
+    .block {
+      &.details,
       &.settings {
         width: 100%;
         .block-inner {
@@ -68,9 +66,8 @@
       }
     }
   }
-  .add-plan{
+  .add-plan {
     width: 100%;
     margin: 12px;
   }
 }
-

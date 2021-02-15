@@ -1,12 +1,12 @@
-label{
+label {
   @include app-font(RegularFont, 12px, 700);
   color: $accent-color-b;
-  &:not(.switch):not(.checkbox-label){
+  &:not(.switch):not(.checkbox-label) {
     display: block;
     margin-block-start: 16px;
     margin-block-end: 13px;
     margin-left: 12px;
-  }  
+  }
 }
 
 input,
@@ -14,24 +14,24 @@ textarea,
 button,
 select,
 a {
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 textarea:focus,
-input[type="text"]:focus {
-    outline-width: 0;
-    border: 1px solid $interactive;
-    box-shadow: inset 1px 1px 4px 2px rgb(0 0 0 / 8%);
+input[type='text']:focus {
+  outline-width: 0;
+  border: 1px solid $interactive;
+  box-shadow: inset 1px 1px 4px 2px rgb(0 0 0 / 8%);
 }
 
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
-    outline: none;
+  outline: none;
 }
 
-input[type="text"],
+input[type='text'],
 textarea {
   @include app-font();
   color: $accent-color-b;
@@ -43,20 +43,20 @@ textarea {
   border-radius: 12px;
 }
 
-input[type="checkbox"]:checked {
+input[type='checkbox']:checked {
   .checklist .checkbox-label & {
-    color:red;
+    color: red;
   }
 }
 
-.checklist{
+.checklist {
   display: flex;
   align-items: center;
   display: -webkit-flex;
   -webkit-align-items: center;
-  
-  label{
-    &.checkbox-label{
+
+  label {
+    &.checkbox-label {
       display: inline-block;
       line-height: 20px !important;
       vertical-align: middle;
@@ -77,15 +77,15 @@ input[type="checkbox"]:checked {
   width: 36px;
   min-width: 36px;
   height: 20px;
-  input[type="checkbox"] {
+  input[type='checkbox'] {
     opacity: 0;
     width: 0;
     height: 0;
     &:checked + .slider {
       background-color: $interactive;
       &:before {
-        font-family: "Font Awesome 5 Free";
-        content: "\f00c";
+        font-family: 'Font Awesome 5 Free';
+        content: '\f00c';
         color: $interactive;
         display: flex;
         align-items: center;
@@ -108,24 +108,24 @@ input[type="checkbox"]:checked {
     right: 0;
     bottom: 0;
     background-color: $interactive-off;
-    -webkit-transition: .4s;
-    transition: .4s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
     border-radius: 20px;
     &:before {
       position: absolute;
-      content: "";
+      content: '';
       height: 18px;
       width: 18px;
       left: 1px;
       bottom: 1px;
       background-color: white;
-      -webkit-transition: .4s;
-      transition: .4s;
+      -webkit-transition: 0.4s;
+      transition: 0.4s;
       border-radius: 50%;
     }
   }
 }
-.form-input{
+.form-input {
   margin: 0;
   label {
     @include app-font(BoldFont, 12px, 700);

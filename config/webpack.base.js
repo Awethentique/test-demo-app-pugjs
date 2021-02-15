@@ -1,5 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
+const PrettierPlugin = require('prettier-webpack-plugin');
 const webpack = require('webpack');
 
 const OUTPUT_DIR = 'dist';
@@ -58,6 +60,23 @@ const configureFontsLoader = () => {
       }
     ]
   }
+}
+
+// Configure Eslint
+const configureEsLint = () => {
+  return new ESLintPlugin({
+      overrideConfigFile: path.resolve(__dirname, '../.eslintrc.js'),
+      context: path.resolve(__dirname, '../sources/js'),
+      fix: true,
+      // files: '**/*.js',
+      files: ['.', 'src', 'config'],
+      // formatter: 'table',
+    });
+}
+
+// Configure Prettier
+const configurePrettier = () => {
+  return new PrettierPlugin();
 }
 
 // configure jQuery
@@ -127,6 +146,8 @@ module.exports = {
     ],
   },
   plugins: [
+    configureEsLint(),
+    configurePrettier(),
     configureJquery(),
     ...entryHtmlPlugins,
   ]

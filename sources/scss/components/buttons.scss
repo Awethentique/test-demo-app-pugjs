@@ -1,11 +1,11 @@
-a{
+a {
   text-decoration: none;
   color: $interactive;
   @include app-font(BoldFont, 16px, 700);
   &:hover {
     border-bottom: 2px solid red;
   }
-  &.button{
+  &.button {
     display: inline-block;
     padding: 6px 22px;
     background: $most-light;
@@ -47,7 +47,7 @@ a{
       border: 1px solid $positive;
     }
 
-    &.close{
+    &.close {
       color: $negative;
       border: none;
       background: $most-light;
@@ -59,27 +59,26 @@ a{
       font-size: 18px;
       font-size: 28px;
       text-align: center;
-      .fas{
-          line-height: 18px;
-          vertical-align: middle;
+      .fas {
+        line-height: 18px;
+        vertical-align: middle;
       }
     }
   }
 }
 
-@media only screen 
-  and (max-width: 768px) { 
-    a{
-      &.button { 
-        &.close{
-          width: 36px;
-          height: 36px;
-          padding: 10px;
-          font-size: 20px;
-        }
-      }
-      .add-plan & {
-        width: calc(100% -24px);
+@media only screen and (max-width: 768px) {
+  a {
+    &.button {
+      &.close {
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+        font-size: 20px;
       }
     }
+    .add-plan & {
+      width: calc(100% -24px);
+    }
+  }
 }

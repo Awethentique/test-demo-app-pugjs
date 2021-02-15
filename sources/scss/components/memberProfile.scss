@@ -1,5 +1,5 @@
-.member-profile{
-  .details, 
+.member-profile {
+  .details,
   .settings {
     width: 50%;
     .block-inner {
@@ -7,17 +7,16 @@
       min-height: 210px;
     }
   }
-  .settings{
-    .block-inner{
+  .settings {
+    .block-inner {
       justify-content: space-between;
       padding-bottom: 16px;
     }
   }
 }
 
-@media only screen
-  and (max-width: 768px){
-  .settings{
+@media only screen and (max-width: 768px) {
+  .settings {
     margin-top: 16px;
   }
 }

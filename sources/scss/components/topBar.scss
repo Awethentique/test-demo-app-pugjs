@@ -13,18 +13,17 @@
     color: $accent-color-b;
   }
   p {
-      @include app-font(BoldFont, 20px, 700);
-      color: $accent-color-c;
-      margin-block-start: 10px;
-      margin-block-end: 10px;
+    @include app-font(BoldFont, 20px, 700);
+    color: $accent-color-c;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
   }
 }
 
-@media only screen 
-  and (max-width: 768px) { 
+@media only screen and (max-width: 768px) {
   .top-bar {
-    flex-direction: column;  
-    width: 100vw; 
+    flex-direction: column;
+    width: 100vw;
     .block {
       padding: 16px 12px;
       width: 100%;

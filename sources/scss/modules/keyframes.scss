@@ -1,5 +1,5 @@
 // For ripple effect on press
-// 
+//
 @keyframes ripple {
   to {
     transform: scale(4);
@@ -33,43 +33,42 @@
 // }
 // For content loaders
 @keyframes load {
-    from {
-        left: -150px;
-    }
-    to   {
-        left: 100%;
-    }
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
 }
 @-webkit-keyframes load {
-    from {
-        left: -150px;
-    }
-    to   {
-        left: 100%;
-    }
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
 }
 
 @keyframes loader {
-    0% {
-        background-color: rgba(165, 165, 165, 0.1);
-    }
-    50% {
-        background-color: rgba(165, 165, 165, 0.3);
-    }
-    100% {
-        background-color: rgba(165, 165, 165, 0.1);
-    }
+  0% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+    background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
 }
 
 @-webkit-keyframes loader {
-    0% {
-        background-color: rgba(165, 165, 165, 0.1);
-    }
-    50% {
-        background-color: rgba(165, 165, 165, 0.3);
-    }
-    100% {
-        background-color: rgba(165, 165, 165, 0.1);
-    }
+  0% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
+  50% {
+    background-color: rgba(165, 165, 165, 0.3);
+  }
+  100% {
+    background-color: rgba(165, 165, 165, 0.1);
+  }
 }
-
