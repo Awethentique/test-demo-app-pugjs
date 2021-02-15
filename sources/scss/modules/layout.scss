@@ -188,3 +188,56 @@
     justify-content: space-between;
   }
 }
+
+@media only screen 
+  and (orientation: portrait) { 
+  .view-controls{
+    width: auto;
+    padding: 12px;
+    right: 0;
+  }
+  // For Member details
+  .content-block {
+    flex-direction: column;
+    margin: 8px;
+    width: calc(100vw - 16px);
+    padding: 10px 10px 12px;
+    .block{
+      &.details, 
+      &.settings {
+        width: 100%;
+        .block-inner {
+          height: auto;
+          padding-bottom: 16px;
+        }
+      }
+    }
+     &.member-plan{
+      flex-direction: column;
+      justify-content: space-between;
+      .block{
+        width: 100%;
+        &.plan{
+          .plan-types{
+            flex-direction: column;
+            .plan-type-selection{
+              min-width: initial;
+              width: 100%;
+              background-size: auto 60px;
+              height: auto;
+              min-height: 150px;
+              &:before{
+                width: 60px;
+                height: 60px;
+                left:-30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .add-plan{
+    margin: 12px;
+  }
+}

@@ -19,3 +19,15 @@
       margin-block-end: 10px;
   }
 }
+
+@media only screen 
+  and (orientation: portrait) { 
+  .top-bar {
+    flex-direction: column;  
+    width: 100vw; 
+    .block {
+      padding: 16px 12px;
+      width: 100%;
+    }
+  }
+}

@@ -66,3 +66,20 @@ a{
     }
   }
 }
+
+@media only screen 
+  and (orientation: portrait) { 
+    a{
+      &.button { 
+        &.close{
+          width: 36px;
+          height: 36px;
+          padding: 10px;
+          font-size: 20px;
+        }
+      }
+      .add-plan &{
+        width: 100%;
+      }
+    }
+}
