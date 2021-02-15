@@ -1,0 +1,23 @@
+
+@font-face {
+  font-family: 'BoldFont';
+  src: url('fonts/ProximaNovaRegular.eot');
+  src: local('ProximaNovaRegular'), url('fonts/ProximaNovaRegular.woff') format('woff'), url('fonts/ProximaNovaRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RegularFont';
+  src: url('fonts/proximanovalight.eot');
+  src: local('proximanovalight'), url('fonts/proximanovalight.woff') format('woff'), url('fonts/proximanovalight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin app-font( $font-name: RegularFont, $size: 14px, $weight: normal) {
+  font-family: $font-name, sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $size;
+}

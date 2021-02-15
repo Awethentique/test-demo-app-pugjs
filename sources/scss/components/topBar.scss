@@ -1,0 +1,21 @@
+.top-bar {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 0 0 12px 12px;
+  background-color: $most-light;
+  .block {
+    padding: 36px 62px;
+    width: 32%;
+  }
+  h2 {
+    @include app-font();
+    color: $accent-color-b;
+  }
+  p {
+      @include app-font(BoldFont, 20px, 700);
+      color: $accent-color-c;
+      margin-block-start: 10px;
+      margin-block-end: 10px;
+  }
+}

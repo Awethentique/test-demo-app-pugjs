@@ -1,0 +1,124 @@
+label{
+  @include app-font(RegularFont, 12px, 700);
+  color: $accent-color-b;
+  &:not(.switch):not(.checkbox-label){
+    display: block;
+    margin-block-start: 16px;
+    margin-block-end: 13px;
+    margin-left: 12px;
+  }
+  
+}
+textarea:focus,
+input:focus {
+    outline-width: 0;
+    box-shadow: inset 1px 1px 4px 2px rgb(0 0 0 / 8%);
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input[type="text"],
+textarea {
+  @include app-font();
+  color: $accent-color-b;
+  padding: 9px 12px 12px 12px;
+  width: 100%;
+  background: $most-light;
+  border: 1px solid $input-border;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+input[type="checkbox"]:checked {
+  .checklist .checkbox-label & {
+    color:red;
+  }
+}
+
+.checklist{
+  display: flex;
+  align-items: center;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  
+  label{
+    &.checkbox-label{
+      display: inline-block;
+      line-height: 20px !important;
+      vertical-align: middle;
+      height: 20px;
+      padding-left: 16px;
+      @include app-font(RegularFont, 16px, 400);
+
+      &.bold {
+        @include app-font(BoldFont, 16px, 700);
+      }
+    }
+  }
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  min-width: 36px;
+  height: 20px;
+  input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    &:checked + .slider {
+      background-color: $interactive;
+      &:before {
+        font-family: "Font Awesome 5 Free";
+        content: "\f00c";
+        color: $interactive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        -webkit-transform: translateX(16px);
+        -ms-transform: translateX(16px);
+        transform: translateX(16px);
+      }
+    }
+    &:focus + .slider {
+      box-shadow: 0 0 1px $interactive;
+    }
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $interactive-off;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 20px;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 1px;
+      bottom: 1px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+      border-radius: 50%;
+    }
+  }
+}
+.form-input{
+  margin: 0;
+  label {
+    @include app-font(BoldFont, 12px, 700);
+  }
+}
