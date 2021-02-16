@@ -66,6 +66,14 @@ a {
         line-height: 18px;
         vertical-align: middle;
       }
+      &:hover {
+        box-shadow: 0px 0px 6px 2px $button-hover-box-shadow;
+        border: 1px solid $negative;
+        transform: scale(1.03);
+      }
+      &:active {
+        box-shadow: inset 0px 0px 6px 2px $button-hover-box-shadow;
+      }
       span.ripple {
         background-color: $button-ripple-close;
       }

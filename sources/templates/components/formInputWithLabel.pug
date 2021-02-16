@@ -1,10 +1,11 @@
 
-mixin formInputWithLabel(labelText, id, placeholder)
+mixin formInputWithLabel(labelText, id, placeholder, type)
   p.form-input
     label(for=id)=labelText
     input(
-      name=id, 
-      id=id 
-      type="text"
+      type=type
+      name=id
+      id=id
       placeholder=placeholder
+      class=type + "-input"
     )
