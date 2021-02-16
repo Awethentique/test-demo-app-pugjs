@@ -51,24 +51,24 @@
 
 @keyframes loader {
   0% {
-    background-color: rgba(165, 165, 165, 0.1);
+    background-color: $loader-0;
   }
   50% {
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: $loader-50;
   }
   100% {
-    background-color: rgba(165, 165, 165, 0.1);
+    background-color: $loader-100;
   }
 }
 
 @-webkit-keyframes loader {
   0% {
-    background-color: rgba(165, 165, 165, 0.1);
+    background-color: $loader-0;
   }
   50% {
-    background-color: rgba(165, 165, 165, 0.3);
+    background-color: $loader-50;
   }
   100% {
-    background-color: rgba(165, 165, 165, 0.1);
+    background-color: $loader-100;
   }
 }
