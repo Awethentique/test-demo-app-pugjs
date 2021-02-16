@@ -2,6 +2,7 @@ const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const PrettierPlugin = require('prettier-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 const OUTPUT_DIR = 'dist';
@@ -55,6 +56,7 @@ const configureFontsLoader = () => {
         loader: 'file-loader',
         options: {
           name: '[name].[ext]',
+          publicPath: '../../fonts',
           outputPath: 'fonts/'
         }
       }
@@ -85,6 +87,20 @@ const configureJquery = () => {
     $: 'jquery',
     jQuery: 'jquery',
   });
+}
+
+// configure copyplugin for assets
+const cofigureCopyPlugin = () => {
+  return new CopyPlugin({
+      patterns: [
+        // { from: "source", to: "dest" },
+        { from: path.resolve(__dirname, '../sources/favicon'), to: './favicon' },
+        // { from: paths.src + '/features', to: 'features' },
+        // { from: paths.src + '/partners', to: 'partners' },
+        // { from: paths.src + '/kitchenSink', to: 'kitchenSink' },
+        // { from: paths.projRoot + '/resources/dependencies', to: './' },
+      ],
+    });
 }
 
 // Expose jQuery to project
@@ -146,6 +162,7 @@ module.exports = {
     ],
   },
   plugins: [
+    cofigureCopyPlugin(),
     configureEsLint(),
     configurePrettier(),
     configureJquery(),
