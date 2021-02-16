@@ -9,13 +9,19 @@ $(document).ready(function () {
   $('.button').click(function (e) {
     const button = e.currentTarget;
     const diameter = Math.max(button.clientWidth, button.clientHeight);
+    // const diameter = Math.max(button.offsetWidth, button.offsetHeight);
     const radius = diameter / 2;
     const circle = document.createElement('span');
     const ripple = button.hasChildNodes('.ripple');
 
     circle.style.width = circle.style.height = `${diameter}px`;
     circle.style.left = `${e.clientX - button.offsetLeft - radius}px`;
-    circle.style.top = `${e.clientY - button.offsetTop - radius}px`;
+    circle.style.top = `${e.pageY - (button.offsetTop + radius)}px`;
+    // debugging info for ripple posotion
+    // console.log('clientY', e.clientY);
+    // console.log('pageY', e.pageY);
+    // console.log('diameter', diameter);
+    // console.log('radius', radius);
     // console.log('circle.style.top', circle.style.top);
 
     circle.classList.add('ripple');
