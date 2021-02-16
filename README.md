@@ -4,6 +4,11 @@
 
 Test app using PUGJS templating engine to demonstrate the power of using CSS to impliment design
 
+## TLDR;
+To view the end production ready result:
+
+Clone the repo and drop the `dist/index.html` into your browser.
+
 ## Clone the repo and install dependencies
 ```bash
 git clone https://github.com/trinityEon/test-demo-app-pugjs.git
