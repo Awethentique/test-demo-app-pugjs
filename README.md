@@ -1,20 +1,27 @@
-
 # Test app using webpack
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-Test app using PUGJS templating engine to demonstrate the power of using CSS to impliment design
+Test app using PUGJS templating engine to demonstrate the power of using CSS to implement design. For a job application I tasked to build and style this interface from a Figma file.
+
+https://www.figma.com/file/k24Ot3lNJrBaMzsfJabQ1U/UXE-Task?node-id=202%3A186
+
+![alt text](https://github.com/Awethentique/test-demo-app-pugjs/blob/master/assesment.png?raw=true)
 
 ## TLDR;
+
 To view the end production ready result:
 
 Clone the repo and drop the `dist/index.html` into your browser.
 
 ## Clone the repo and install dependencies
+
 ```bash
-git clone https://github.com/trinityEon/test-demo-app-pugjs.git
+git clone https://github.com/Awethentique/test-demo-app-pugjs.git
 cd test-demo-app-pugjs
 npm i
 ```
+
 ## Usage
 
 ### Development server
@@ -86,6 +93,7 @@ npm run prod
 - [`workbox-webpack-plugin`](https://github.com/GoogleChrome/workbox/tree/master/packages/workbox-webpack-plugin) - Workbox provides two webpack plugins: one that generates a complete service worker for you and one that generates a list of assets to precache that is injected into a service worker file.
 
 ### Assets
+
 - `.htaccess` - optimized 100/100 in google https://web.dev/measure/ of course when there are no ads ;)
 - `manifest.json` - of course you can use the `favicons-webpack-plugin` that will generate all possible elements in the manifest
 
