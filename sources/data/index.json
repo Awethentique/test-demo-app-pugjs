@@ -1,10 +1,10 @@
 {
   "head": {
-    "title": "title - index",
-    "description": "description - index"
+    "title": "UXE Assessment",
+    "description": "I was tasked to build a pixel-perfect web page as an assessment for a job interview. Here I taught myself some new libraries while doing the assessment. The task was only to \"build as you see\" for a web-only desktop application. I got carried away with presenting my passion for building useful interfaces and including responsive, fluidly adaptive layouts across all mobile devices as well."
   },
   "leftbar": {
-    "image": "images/glofox-logo-icon.svg"
+    "image": "images/github.svg"
   },
   "topBar": {
     "memberTitle": "Membership Title",
